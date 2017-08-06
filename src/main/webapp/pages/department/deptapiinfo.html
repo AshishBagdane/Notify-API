@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>NotifyApp-API | Department API Information</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid text-center">
+            <div class="list-group">
+                <a href="#" class="list-group-item">Show all Departments</a>
+                <a href="#" class="list-group-item">Show a Department</a>
+                <a href="#" class="list-group-item">Create a Department</a>
+                <a href="#" class="list-group-item">Update a Department</a>
+                <a href="#" class="list-group-item">Delete a Department</a>
+                <a href="#" class="list-group-item">Delete all Departments</a>
+                <a href="#" class="list-group-item">Show specific Department related Posts</a>
+                <a href="#" class="list-group-item">Show specific Department related Post</a>
+            </div>
+            <div class="panel panel-default" id="#alldepts">
+                <div class="panel-heading">Show all Departments</div>
+                <div class="panel-title">Returns json/xml data of all departments.</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="row text-primary">URL</div>
+                        <div class="row text-info">/departments</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Method</div>
+                        <div class="row text-info">GET</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Path Parameters</div>
+                        <div class="row text-info">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Query Parameters</div>
+                        <div class="row text-info">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Success Response</div>
+                        <div class="row text-info">
+                            <div class="row">Code: 302</div>
+                            <div class="row">Content: [{id: 1, name: "Information Technology"}, {id: 2, name: "Computer Engineering"}]</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Error Response</div>
+                        <div class="row text-info">
+                            <div class="row">Code: 404</div>
+                            <div class="row">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#alldepts"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Sample call</div>
+                        <div class="row">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="#adept">
+                <div class="panel-heading">Show a Departments</div>
+                <div class="panel-title">Returns json/xml data of a departments.</div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="row text-primary">URL</div>
+                        <div class="row text-info">/departments/1</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Method</div>
+                        <div class="row text-info">GET</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Path Parameters</div>
+                        <div class="row text-info">/departments/{deptId}</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Query Parameters</div>
+                        <div class="row text-info">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Success Response</div>
+                        <div class="row text-info">
+                            <div class="row">Code: 302</div>
+                            <div class="row">Content: {id: 1, name: "Information Technology"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Error Response</div>
+                        <div class="row text-info">
+                            <div class="row">Code: 404</div>
+                            <div class="row">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#adept"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row text-primary">Sample call</div>
+                        <div class="row">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

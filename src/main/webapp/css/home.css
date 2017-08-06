@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 18, 2017, 2:29:35 PM
+    Author     : Ashish
+*/
+    div {
+        font-family: Segoe UI Light;
+    }
+
+    .container-fluid {
+        margin-top: 18vh;
+    }
+
+    h1 {
+        font-size: 10vh;
+        margin-bottom: 5vh;
+    }
+
+    h5 {
+        font-size: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .img-circle {
+        border: 0.2em solid #000;
+    }
+
+    #links {
+        margin-top: 5vh;
+        font-size: 1.5em;
+    }
