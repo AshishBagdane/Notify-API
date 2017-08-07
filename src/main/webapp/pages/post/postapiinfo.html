@@ -16,8 +16,8 @@ and open the template in the editor.
     <body>
         <div class="container-fluid text-left">
             <div class="panel panel-default" id="#alldepts">
-                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api0">Show all Departments</a></div>
-                <div class="panel-info">Returns json/xml data of all departments.</div>
+                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api0">Show all Posts of a particular user</a></div>
+                <div class="panel-info">Returns json/xml data of all posts of a particular user.</div>
                 <div class="panel-body collapse" id="api0">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">URL</div>
@@ -46,7 +46,7 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#alldepts"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#alldepts"}</div>
                         </div>
                     </div>
                     <div class="row">
@@ -90,7 +90,7 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#adept"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#adept"}</div>
                         </div>
                     </div>
                     <div class="row">
@@ -134,7 +134,7 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 409</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource creation failed.", errorCode: 409, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#cdept"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource creation failed.", errorCode: 409, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#cdept"}</div>
                         </div>
                     </div>
                     <div class="row">
@@ -171,14 +171,14 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 200</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {id: 1, name: "Information Technology Engineering"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {id: 1, name: "Information Technology"}</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#udept"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#udept"}</div>
                         </div>
                     </div>
                     <div class="row">
@@ -215,14 +215,14 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 200</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {id: 1, name: "Information Technology Engineering"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {id: 1, name: "Information Technology"}</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#ddept"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#ddept"}</div>
                         </div>
                     </div>
                     <div class="row">
@@ -266,7 +266,7 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#dalldept"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#dalldept"}</div>
                         </div>
                     </div>
                     <div class="row">
@@ -326,7 +326,7 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#dusdept"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#dusdept"}</div>
                         </div>
                     </div>
                     <div class="row">
@@ -380,7 +380,7 @@ and open the template in the editor.
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptapiinfo.html#dpsdept"}</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#dpsdept"}</div>
                         </div>
                     </div>
                     <div class="row">
