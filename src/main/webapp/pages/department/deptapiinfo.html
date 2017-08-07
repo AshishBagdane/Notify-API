@@ -103,6 +103,296 @@ and open the template in the editor.
                     </div>
                 </div>
             </div>
+            <div class="panel panel-default" id="#cdept">
+                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api2">Show a Department</a></div>
+                <div class="panel-info">Returns json/xml data of a newly created department.</div>
+                <div class="panel-body collapse" id="api2">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">URL</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Method</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">POST</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Path Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Query Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 201</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {id: 1, name: "Information Technology"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 409</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource creation failed.", errorCode: 409, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#cdept"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Sample call</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="#udept">
+                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api3">Update a Department</a></div>
+                <div class="panel-info">Returns json/xml data of a updated department.</div>
+                <div class="panel-body collapse" id="api3">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">URL</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/1</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Method</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">PUT</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Path Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/{deptId}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Query Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 200</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {id: 1, name: "Information Technology"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#udept"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Sample call</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="#ddept">
+                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api4">Delete a Department</a></div>
+                <div class="panel-info">Returns json/xml data of a deleted department.</div>
+                <div class="panel-body collapse" id="api4">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">URL</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/{deptId}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Method</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">DELETE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Path Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/{deptId}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Query Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 200</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {id: 1, name: "Information Technology"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#ddept"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Sample call</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="#dalldept">
+                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api5">Delete all Departments</a></div>
+                <div class="panel-info">Returns empty response.</div>
+                <div class="panel-body collapse" id="api5">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">URL</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Method</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">DELETE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Path Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Query Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 200</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#dalldept"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Sample call</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="#dusdept">
+                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api6">Show all Department Related Users</a></div>
+                <div class="panel-info">Returns json/xml data of all users from a department.</div>
+                <div class="panel-body collapse" id="api6">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">URL</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/1/users/</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Method</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">GET</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Path Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/{deptId}/users/</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Query Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 302</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: [
+                                                                                            {
+                                                                                                "eMail": "ashishbagdane1@gmail.com",
+                                                                                                "firstName": "Ashish",
+                                                                                                "lastName": "Bagdane",
+                                                                                                "password": "5$is5$",
+                                                                                                "username": "ashishbagdane1"
+                                                                                            },
+                                                                                            {
+                                                                                                "eMail": "demmyuser@gmail.com",
+                                                                                                "firstName": "Dummy",
+                                                                                                "lastName": "User",
+                                                                                                "password": "5#is5#",
+                                                                                                "username": "dummyuser"
+                                                                                            }
+                                                                                        ]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#dusdept"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Sample call</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default" id="#dpsdept">
+                <div class="panel-heading"><a class="active" data-toggle="collapse" data-target="#api7">Show all Department Related posts</a></div>
+                <div class="panel-info">Returns json/xml data of all department related posts.</div>
+                <div class="panel-body collapse" id="api7">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">URL</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/1/posts/</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Method</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">GET</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Path Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">/departments/{deptId}/posts/</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Query Parameters</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">NONE</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Success Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 302</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: [{
+                                                                                            "body": "All students must come tomorrow.",
+                                                                                            "id": 1,
+                                                                                            "title": "Attendence"
+                                                                                        },
+                                                                                        {
+                                                                                            "body": "We're arranging a Competition",
+                                                                                            "id": 2,
+                                                                                            "title": "Competition"
+                                                                                        }]
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Error Response</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Code: 404</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">Content: {errorMessage: "Resource(s) not found.", errorCode: 404, documentation: "https://localhost:8086/NotifyApp-API/pages/department/deptinfo.html#dpsdept"}</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-primary">Sample call</div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <code>
+                                // jQuery Ajax Snippet
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
